@@ -38,5 +38,4 @@ jobs:
           path: |
             cypress/screenshots
             cypress/videos
-                   # ✅ direct HTML reports from reporter
-            cypress/reports/html         # ✅ merged HTML report directory
+            cypress/reports/html        
