@@ -38,4 +38,5 @@ jobs:
           path: |
             cypress/screenshots
             cypress/videos
+            cypress/reports/index.json
             cypress/reports/html        
