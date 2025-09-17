@@ -7,8 +7,7 @@
     "cypress:run": "cypress run",
     "cypress:run:chrome": "cypress run --browser chrome",
     "test": "cypress run --browser chrome --headless",
-    "test:report": "npm test && npx mochawesome-merge cypress/reports/.jsons/*.json > cypress/reports/report.json && npx marge cypress/reports/report.json -f report -o cypress/reports && rimraf cypress/videos/*.mp4"
-  },
+  "test:report": "npm test && npx mochawesome-merge \"cypress/reports/*.json\" > cypress/reports/report.json && npx marge cypress/reports/report.json -f report -o cypress/reports && rimraf cypress/videos/*.mp4"  },
   "devDependencies": {
     "cypress": "^15.2.0",
     "cypress-mochawesome-reporter": "^3.8.4",

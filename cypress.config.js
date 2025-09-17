@@ -8,11 +8,13 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       // Register mochawesome reporter
       require('cypress-mochawesome-reporter/plugin')(on);
+      return config;
+    
     },
     screenshotOnRunFailure: true,
     screenshotsFolder: 'cypress/screenshots',
     video: true,
-    videoUploadOnPasses: false,
+    //videoUploadOnPasses: false,
     videosFolder: 'cypress/videos',
     viewportWidth: 1280,
     viewportHeight: 720,
@@ -20,6 +22,7 @@ module.exports = defineConfig({
       admin_user: 'Admin',
       admin_password: 'admin123'
     }
+    
   },
   reporter: 'cypress-mochawesome-reporter',
   reporterOptions: {
@@ -27,6 +30,8 @@ module.exports = defineConfig({
     overwrite: false,
     html: true,
     json: true,
+    saveJson: true,
+    
     charts: true,
     reportPageTitle: 'OrangeHRM Test Report',
     embeddedScreenshots: true,
