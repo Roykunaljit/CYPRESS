@@ -44,4 +44,6 @@ jobs:
           path: |
             cypress/screenshots
             cypress/videos
-            cypress/reports/html
+            cypress/reports/*.json        # ✅ raw mocha JSON reports
+            cypress/reports/*.html        # ✅ direct HTML reports from reporter
+            cypress/reports/html         # ✅ merged HTML report directory
