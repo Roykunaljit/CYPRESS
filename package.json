@@ -7,7 +7,7 @@
     "cypress:run": "cypress run",
     "cypress:run:chrome": "cypress run --browser chrome",
     "test": "cypress run --browser chrome --headless",
-    "test:report": "npm run test && npx mkdirp cypress/reports/html && npx marge cypress/reports/index.json -f report -o cypress/reports/html --reportTitle \"OrangeHRM Test Report\" && (del /q \"cypress\\videos\\*.mp4\" 2>nul || true)"
+    "test:report": "npm run test && npx mkdirp cypress/reports/html && npx marge cypress/reports/index.json -f report -o cypress/reports/html --reportTitle \"OrangeHRM Test Report\""
   },
   "devDependencies": {
     "cypress": "^15.2.0",

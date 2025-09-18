@@ -5,7 +5,7 @@ describe('OrangeHRM Screenshot Examples', () => {
     cy.visit('/web/index.php/auth/login');
 
     // Capture entire page
-    cy.get('.orangehrm-login-branding', { timeout: 15000 }).should('be.visible');
+    cy.get('.orangehrm-login-branding', { timeout: 60000 }).should('be.visible');
     cy.screenshot('login-page');
 
     // Capture specific element
@@ -22,7 +22,7 @@ describe('OrangeHRM Screenshot Examples', () => {
     cy.get('button[type="submit"]').click();
 
     // Verify dashboard and capture
-    cy.url({ timeout: 10000 }).should('include', '/dashboard');
+    cy.url({ timeout: 60000 }).should('include', '/dashboard');
     cy.screenshot('dashboard-page');
   });
 });

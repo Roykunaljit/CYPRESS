@@ -31,7 +31,6 @@ module.exports = defineConfig({
     html: false,
     json: true,
     saveJson: true,
-    
     charts: true,
     reportPageTitle: 'OrangeHRM Test Report',
     embeddedScreenshots: true,
